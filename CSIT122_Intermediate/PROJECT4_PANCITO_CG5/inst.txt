@@ -1,0 +1,148 @@
+/*      ******** ARRAY-OPERATIONS (w/ DATA ABSTRACTION) IMPLEMENTATION  ********
+
+    GENERAL INSTRUCTION: READ EVERYTHING FIRST BEFORE U START!
+
+
+      Header Filename: "ARRAYOP.H"
+
+Create the ff. functions:
+
+      NOTE: You may also revised the function prototypes to implement CALL-BY REFERENCE
+
+  CHOICES:
+ A.] void INITIALIZEArray(int la[], int n)  //(5pts)
+    {
+    /*Accepts inputted integer numbers for array LA  from LA[0] to LA[n-1].
+       Each inputted integer in the array must be unique.If an item already exists in the array,  
+          you prompt the user a message "inputted integer already exists, try another no." */
+    }
+
+ B.] void PRINTArray(int *la,int n) //(5 pts)
+    {
+    /*print each item in the array list.*/
+     }
+
+ C.] int INSERTAtPos(int  *la, int n, int item, int k) //(10 pts)
+    {
+    /* note:ensure that this function can be invoke or
+       called only if array is NOT EMPTY!
+
+    Requirements(for no. 3):
+
+     - check first if the number(int) to be inserted 
+        does not exists in the array, otherwise prompt the user a message "Data item you wish 
+                to add already exists in the array...try another!"
+       hint: you may use the locate() function inside this process
+    
+     -  if the no. to be inserted is unique, insert this item at the specified ith(index position)
+              at the end, this function returns the new array size. */
+       }
+
+ D.]  void INSERTFront(int  la[], int *n,int  item ) //(10 pts)
+     {
+      Note: You check first whether the array is empty or not before value in item is inserted 
+                at index 0
+      /*don't allow the user to call this function if array is empty
+     (do this in main()) if item to be inserted is unique, proceed with the insertion process, otherwise prompt the user that item to insert already exists...try again")
+
+Requirements:
+  - the insert front function- allows the user to insert a unique item at the beginning of the list   
+          or at the front (index 0)
+  - implement call-by-reference for *LA and *n
+  - increment  (*n) ++ after each item is inserted*/
+ }
+
+  E.] int REMOVEItem(int la[], int n, int item) //(10 pts)
+   {/* remove item in the array list (if found), function returns new array size.
+       If item to delete is not in the array, function returns -1.
+        (validate this in main()) */ 
+
+  F.] int REMOVEFront(int la[], int n) //(10 pts)
+   {/* remove the item located at the front of the array list w/c is 
+        at index 0, function returns new array size.*/
+    }    
+
+  G.]   int LOCATEIndex(int  la[],int n, int item) //(10 pts)
+         {
+         /* 
+          Requirements:
+          ~  search for item (passed as parameter) if it exists in the array.
+          ~  if item is found, return index of such item
+          ~ if item is not found function returns  -1
+          }
+
+        int locateItem(int  la[],int n, int item)//(10 pts)
+         {
+          /* 
+          Requirements:
+           ~  search for item (passed as parameter) if it exists in the array
+           ~  if item is found, return 1 (TRUE) and 0 (FALSE) if item is not found in the list */
+          }
+
+   H.]  void sortAscending(int la[], int n)//(10 pts)
+     { /* sorts each item in the array in ascending order */}
+
+   I.]   void sortDescending(int la[],int n)//(10 pts)
+      { /* sorts each item in the array in descending order */}
+
+       NOTE!! When user selects 9 invoke the sortAscending() and sortDEscending functions 
+                 and display the sorted lists.  
+
+       Sample output is given below:
+
+               ARRAY list in ASCENDING order  : 1  2   3   4   5
+ 
+            ARRAY list in DESCENDING order: 5  4   3    2  1
+            
+   J.] Exit()   terminates from the program process // 3 pts
+
+
+
+II. Create a function main() to implement each function of array operations  //15 pts
+      describe above. 
+
+
+Requirements:
+  ~ Save as "ARRYOPTN.C"   
+  ~ Include the header files "MYTOOLS.H and  "ARRAYop.H"
+  ~ you follow the given menu layout below
+  ~ use the utility tools in your "Mytools.h" file when designing
+       your menu box or window
+
+MORE!  m O r E!   MoRe!
+
+ * after each process had been done, process goes back to main menu..
+    program terminates only if choice is J - EXIT
+ * use drawDBox() to layout your menu
+ * create a function menu() to display the menu layout given above. //10 pts
+
+
+============================================================
+         ~~~~~~ ARRAY OPERATIONS  ~~~~	    
+					            
+	     				            
+	     	[A]   INITIALIZEArray		
+   		[B]   PRINTArray 		
+    		[C]   INSERTAtPos		           
+    		[D]   INSERTFront		           
+    		[E]   REMOVEAtPos		           
+    	        [F]   REMOVEFront		           
+                [G]   LOCATE	                    //note: call the 2 locate functions when user selects G-LOCATE        
+                [H]   SORT Ascending <Bubble Sort>
+                [I]   SORT Descending <Bubble Sort> 
+                [J]   EXIT                                
+           
+                 Enter a valid choice[A-J]:   
+    					  
+=============================================================
+
+Example :  if user selects [A]   INITIALIZEArray, the program invokes createArray(), 
+                   after the user is done with the input , process loops back to the 
+                    menu display to allow the user to select another array operations.
+                    Program exits only if choice  is  J  for exit.
+
+
+
+*/
+
+    				
